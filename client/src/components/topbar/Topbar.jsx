@@ -2,15 +2,18 @@ import PersonIcon from "@mui/icons-material/Person";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import FindInPageIcon from "@mui/icons-material/FindInPage";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import { Link } from "react-router-dom";
 
 import "./topbar.css";
 const Topbar = () => {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">
-          Social <span className="topbarbg">Media</span>
-        </span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">
+            Social <span className="topbarbg">Media</span>
+          </span>
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">

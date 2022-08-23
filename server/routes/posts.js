@@ -13,6 +13,6 @@ router.put("/:id", updatepost);
 router.delete("/:id", deletepost);
 router.put("/:id/like", likepost);
 router.get("/:id", getpost);
-router.get("/timeline/all", timelinepost);
+router.get("/timeline/:userId", timelinepost);
 
 module.exports = router;
